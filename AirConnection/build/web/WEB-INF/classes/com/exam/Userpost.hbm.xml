@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 9:08:37 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Userpost" table="userpost" catalog="airconnection" optimistic-lock="version">
+        <id name="postid" type="int">
+            <column name="postid" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="45" />
+        </property>
+        <property name="posts" type="string">
+            <column name="posts" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

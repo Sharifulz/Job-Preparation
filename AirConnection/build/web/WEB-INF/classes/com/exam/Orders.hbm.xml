@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2019 9:08:37 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Orders" table="orders" catalog="airconnection" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="45" />
+        </property>
+        <property name="productname" type="string">
+            <column name="productname" length="45" />
+        </property>
+        <property name="brand" type="string">
+            <column name="brand" length="45" />
+        </property>
+        <property name="qty" type="java.lang.Integer">
+            <column name="qty" />
+        </property>
+        <property name="total" type="java.lang.Integer">
+            <column name="total" />
+        </property>
+        <property name="stockremain" type="string">
+            <column name="stockremain" length="45" />
+        </property>
+        <property name="orderdate" type="string">
+            <column name="orderdate" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

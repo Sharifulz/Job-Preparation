@@ -64,6 +64,7 @@ SELECT FIRST_NAME ||' '|| LAST_NAME AS EMP_NAME
     3. DATE
     4. BETWEEN
     5. LIKE
+    6. AMPERSENT
 
 
 ** COUNT -------------------------

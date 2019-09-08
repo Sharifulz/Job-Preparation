@@ -1,0 +1,212 @@
+#container{
+    width: 80%;
+    height: 450px;
+    border:1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+#container >img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#container>.btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    top: 200px;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+#container>#btn2{
+    position: relative;
+    float: right;
+}
+.card {
+    overflow: hidden;
+}
+.card:hover{
+}
+.inner img{
+    transition: all 1.2s ease;
+
+}
+.inner:hover img{
+    transform: scale(1.8);
+}
+fieldset.scheduler-border {
+    border: 1px groove red !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+/* General button style (reset) */
+.button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/* Button 1 */
+.button-1 {
+    border: 3px solid #fff;
+    color: #fff;
+}
+/* Button 1a */
+.button-1a:hover,
+.button-1a:active {
+    color: #0e83cd;
+    background: #fff;
+}
+
+
+/* Second Style */
+
+/* Button 3 */
+.button-3 {
+    background: #fcad26;
+    color: #fff;
+}
+.button-3:hover {
+    background: #f29e0d;
+}
+.button-3:active {
+    background: #f58500;
+    top: 2px;
+}
+.button-3>.fa {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-size: 140%;
+    width: 60px;
+}
+.button-3>.fa:before {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* Button 3d */
+.button-3d {
+    padding: 25px 60px 25px 120px;
+    border-radius: 10px;
+}
+.button-3d>.fa {
+    background: #fff;
+    color: #fcad26;
+    z-index: 2;
+    border-radius: 10px 0 0 10px;
+}
+.button-3d:after {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: 1;
+    left: 55px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.button-3d:active:before {
+    color: #f58500;
+}
+.button-3d:active {
+    top: 0;
+}
+.button-3d:active:after {
+    left: 60px;
+}
+
+/* Button 5 */
+.button-5 {
+    background: #165F8E;
+    color: #fff;
+    min-height: 10px;
+    min-width: 60px;
+    line-height: 24px;
+    font-size: 12px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.button-5:active {
+    background: #1871A9;
+    top: 2px;
+}
+.button-5 span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+.button-5>.fa {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button-5:active>.fa {
+    color: #53AFE8;
+}
+/* Button 5a */
+.button-5a:hover span {
+    -webkit-transform: translateY(300%);
+    -moz-transform: translateY(300%);
+    -ms-transform: translateY(300%);
+    transform: translateY(300%);
+}
+.button-5a>.fa {
+    left: 0;
+    top: -100%;
+}
+.button-5a:hover>.fa {
+    top: 0;
+}
+
