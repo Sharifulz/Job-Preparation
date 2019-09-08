@@ -337,7 +337,53 @@ HAVING MAX(SALARY) >10000
 ORDER BY DEPARTMENT_ID DESC;
 
 # JOINS 
-    1. 
+    1. LEFT OUTER JOIN
+    2. RIGHT OUTER JOIN
+    3. FULL OUTER JOIN
+    4. CROSS JOIN
+    5. NATURAL JOIN -- EQUIJOIN
+    6. JOIN -- EQUIJOIN
+
+**  LEFT OUTER JOIN ---------------------------------
+select  e.last_name, e.department_id, d.department_name
+from employees e left outer join departments d
+on (e.department_id = d.department_id);
+
+**  RIGHT OUTER JOIN ---------------------------------
+select  e.last_name, e.department_id, d.department_name
+from employees e RIGHT outer join departments d
+on (e.department_id = d.department_id);
+
+**  FULL OUTER JOIN ---------------------------------
+select  e.last_name, e.department_id, d.department_name
+from employees e FULL outer join departments d
+on (e.department_id = d.department_id);
+
+**  CROSS JOIN ---------------------------------
+select  last_name,department_name
+from employees CROSS join departments;
+
+**  NATURAL JOIN ---------------------------------
+SELECT DEPARTMENT_ID, DEPARTMENT_NAME, LOCATION_ID, CITY
+FROM DEPARTMENTS
+NATURAL JOIN LOCATIONS;
+
+** JOIN ---------------------------------------
+SELECT EMPLOYEE_ID, LAST_NAME,  DEPARTMENT_ID, LOCATION_ID
+FROM EMPLOYEES JOIN DEPARTMENTS
+USING (DEPARTMENT_ID);
+
+# SUB QUERIES -------------------------------------
+** SELECT SECOND HIGHEST SALARY FROM EMPLOYEES TABLE
+SELECT MAX(SALARY) 
+FROM EMPLOYEES
+WHERE SALARY< (SELECT MAX(SALARY) FROM EMPLOYEES);
+
+** ROW NUMBER
+SELECT SALARY 
+FROM EMPLOYEES
+WHERE SALARY< (SELECT MAX(SALARY) FROM EMPLOYEES)
+AND ROWNUM<6;
 
 ** USING QUOTE ---------------------------------
 SELECT DEPARTMENT_NAME || Q'[ DEPARTMENT'S MANAGER IS ]'|| MANAGER_ID AS "DEPARTMENT AND MANAGER"
