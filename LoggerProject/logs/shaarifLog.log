@@ -1,0 +1,6 @@
+[INFO ] 2019-11-06 00:59:58.316 [main] TestLogger - Some Log---------------------------------------
+[WARN ] 2019-11-06 00:59:58.318 [main] TestLogger - Warn message
+[ERROR] 2019-11-06 00:59:58.318 [main] TestLogger - Error message
+[INFO ] 2019-11-06 01:00:19.914 [main] TestLogger - Some Log---------------------------------------
+[WARN ] 2019-11-06 01:00:19.917 [main] TestLogger - Warn message
+[ERROR] 2019-11-06 01:00:19.917 [main] TestLogger - Error message
